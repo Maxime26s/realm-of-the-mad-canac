@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 3178360780992636405}
   - component: {fileID: 7320879928762572718}
   - component: {fileID: 2896991247104068193}
+  - component: {fileID: -8893370505559760564}
   m_Layer: 0
-  m_Name: niggerman4
+  m_Name: Ennemy
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 679414ecb0f83b24ea46fd0df9bcdbfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 389e8dba562a88848ae2ba1f4b70fdf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8, y: 3.78}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 2.8, y: 3.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -158,3 +159,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a018e1989258641b6e03d90ff22dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8893370505559760564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305142837984266968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc51c5a1b979a042a0dc29294fe8d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 2305142837984266967}
+  balle: {fileID: 7202419256658554264, guid: 06ef6fdf987fdab47b935f3163bec4e0, type: 3}
+  vitesseBalle: 10
