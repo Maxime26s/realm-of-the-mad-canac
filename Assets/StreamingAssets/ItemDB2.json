@@ -1,0 +1,328 @@
+{
+  "itemList": [
+      {
+        "id": 0,
+        "name": "Steel Dagger",
+        "stackable": true,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 0,
+          "damage": [
+            20,
+            60
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 1,
+        "name": "Dirk",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 1,
+          "damage": [
+            20,
+            70
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 2,
+        "name": "Blue Steel Dagger",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 2,
+          "damage": [
+            20,
+            75
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 3,
+        "name": "Dusky Rose Dagger",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 3,
+          "damage": [
+            25,
+            80
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 4,
+        "name": "Silver Dagger",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 4,
+          "damage": [
+            30,
+            80
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 5,
+        "name": "Golden Dagger",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Dagger",
+          "tier": 5,
+          "damage": [
+            30,
+            90
+          ],
+          "projectileSpeed": 14,
+          "lifetime": 0.4
+        }
+      },
+      {
+        "id": 6,
+        "name": "Shortbow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 0,
+          "damage": [
+            15,
+            45
+          ],
+          "projectileSpeed": 16,
+          "lifetime": 0.44
+        }
+      },
+      {
+        "id": 7,
+        "name": "Reinforced Bow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 1,
+          "damage": [
+            20,
+            50
+          ],
+          "projectileSpeed": 16,
+          "lifetime": 0.44
+        }
+      },
+      {
+        "id": 8,
+        "name": "Crossbow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 2,
+          "damage": [
+            25,
+            60
+          ],
+          "projectileSpeed": 20,
+          "lifetime": 0.375
+        }
+      },
+      {
+        "id": 9,
+        "name": "Greywood Bow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 3,
+          "damage": [
+            30,
+            65
+          ],
+          "projectileSpeed": 16,
+          "lifetime": 0.44
+        }
+      },
+      {
+        "id": 10,
+        "name": "Ironwood Bow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 3,
+          "damage": [
+            45,
+            70
+          ],
+          "projectileSpeed": 16,
+          "lifetime": 0.44
+        }
+      },
+      {
+        "id": 11,
+        "name": "Fire Bow",
+        "stackable": false,
+        "equipable": true,
+        "equipment":{
+          "att": 0,
+          "def": 0,
+          "spd": 0,
+          "dex": 0,
+          "vit": 0,
+          "wis": 0,
+          "hp": 0,
+          "mp": 0,
+          "slot": "weapon"
+        },
+        "weapon": {
+          "type": "Bow",
+          "tier": 3,
+          "damage": [
+            50,
+            75
+          ],
+          "projectileSpeed": 16,
+          "lifetime": 0.44
+        }
+      }
+  ]
+}
