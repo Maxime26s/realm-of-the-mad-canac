@@ -4,12 +4,29 @@ using UnityEngine;
 
 public class destroyBullet : MonoBehaviour
 {
+    string ignore;
+
+    private void Awake()
+    {
+        ignore = transform.parent.gameObject.tag;
+        transform.parent = null;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag != "player")
+        if(collision.tag != ignore)
         {
-            Destroy(gameObject);
+            if(collision.tag == "Ennemy")
+            {
+                collision.gameObject.GetComponent<lifeManagement>().perteDeVie();
+                Destroy(gameObject);
+            }
+            else if(collision.tag == "player")
+            {
+                collision.gameObject.GetComponent<lifeManagement>().perteDeVie();
+                collision.gameObject.GetComponent<lifeManagement>().affichage();
+                Destroy(gameObject);
+            }
+            
         }
-        
     }
 }
