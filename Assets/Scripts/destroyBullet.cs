@@ -17,13 +17,13 @@ public class destroyBullet : MonoBehaviour
         {
             if(collision.tag == "Ennemy")
             {
-                collision.gameObject.GetComponent<lifeManagement>().perteDeVie();
+                collision.gameObject.GetComponent<Entite>().perteDeVie();
                 Destroy(gameObject);
             }
             else if(collision.tag == "player")
             {
-                collision.gameObject.GetComponent<lifeManagement>().perteDeVie();
-                collision.gameObject.GetComponent<lifeManagement>().affichage();
+                collision.gameObject.GetComponent<Entite>().perteDeVie();
+                collision.gameObject.GetComponent<player>().affichage();
                 Destroy(gameObject);
             }
             

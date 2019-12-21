@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnnemySpawn : MonoBehaviour
 {
     public GameObject ennemy;
     bool cd = false;
-    GameObject player;
-    int [] tab = { -10, 10 };
+    GameObject player;   
+
     void Start()
     {
         player = GameObject.FindWithTag("player");

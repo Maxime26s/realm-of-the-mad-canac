@@ -3,57 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class lifeManagement : MonoBehaviour
+public class player : Entite
 {
-    int vie;
+
     public Text textVie;
     bool cd = false;
+    public int exp;
     // Start is called before the first frame update
     void Start()
     {
-         vie= 100;
+        hp = 100;
+        exp = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.tag == "player")
+        if (gameObject.tag == "player")
         {
             if (!cd)
             {
-             healing();
-            } 
-            
-        }
-        if (vie <=0)
-            {
-                if (gameObject.tag == "player")
-                {
-                textVie.text = "Mort";
-                }
-                Destroy(gameObject);
+                healing();
             }
-        
-    }
 
-    public void perteDeVie()
-    {
-        vie = vie - 20;
-    }
+        }
+        if (hp <= 0)
+        {
+            if (gameObject.tag == "player")
+            {
+                textVie.text = "Mort";
+            }
+            Destroy(gameObject);
+        }
+        switch (exp)
+        {
+            //niveaux
+        }
 
+    }
     public void affichage()
     {
-        textVie.text = "Vie : " + vie;
+        textVie.text = "Vie : " + hp;
     }
 
     void healing()
     {
-        if(vie < 100)
+        if (hp < 100)
         {
-            vie++;
-            textVie.text = "Vie : " + vie;
+            hp++;
+            textVie.text = "Vie : " + hp;
             StartCoroutine(cooldown());
-        }   
+        }
     }
     IEnumerator cooldown()
     {

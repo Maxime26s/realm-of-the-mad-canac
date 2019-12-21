@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnnemyMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public GameObject player;
+    Text vieEnnemy;
 
     float moveSpeed = 5f;
     private void Start()
@@ -20,6 +22,6 @@ public class EnnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 direct = (player.transform.position - gameObject.transform.position).normalized * 0.5f;
-        rb.MovePosition(rb.position + direct * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direct * moveSpeed * Time.fixedDeltaTime);        
     }
 }

@@ -37,7 +37,7 @@ public class ShootingEnnemy : MonoBehaviour
     IEnumerator shot()
     {
         cd = true;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.75f);
         cd = false;
     }
 }
