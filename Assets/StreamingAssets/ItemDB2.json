@@ -3,7 +3,7 @@
       {
         "id": 0,
         "name": "Steel Dagger",
-        "stackable": true,
+        "stackable": false,
         "equipable": true,
         "equipment":{
           "att": 0,
