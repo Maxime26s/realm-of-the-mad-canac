@@ -18,6 +18,7 @@ public class destroyBullet : MonoBehaviour
             if(collision.tag == "Ennemy")
             {
                 collision.gameObject.GetComponent<Entite>().perteDeVie();
+                collision.gameObject.GetComponent<Ennemy>().affichageEnnemy();
                 Destroy(gameObject);
             }
             else if(collision.tag == "player")
