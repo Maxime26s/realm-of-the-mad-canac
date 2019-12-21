@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public int amount;
     public TextMeshProUGUI text;
@@ -12,11 +12,13 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public int slot;
 
     public Inventory inv;
+    private Tooltip tooltip;
     private Vector2 offset;
 
     private void Start()
     {
         inv = GameObject.FindWithTag("Manager").GetComponent<Inventory>();
+        tooltip = inv.GetComponent<Tooltip>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -43,5 +45,21 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.SetParent(inv.slots[slot].transform);
         transform.position = inv.slots[slot].transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if(item != null)
+            offset = eventData.position - new Vector2(transform.position.x, transform.position.y);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        tooltip.Activate(item);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        tooltip.Deactivate();
     }
 }

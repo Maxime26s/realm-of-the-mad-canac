@@ -29,9 +29,9 @@ public class ItemDatabase : MonoBehaviour
 public class Item
 {
     public int id;
-    string name;
+    public string name;
     public bool stackable;
-    bool equipable;
+    public bool equipable;
     public Equipment equipment;
     public Weapon weapon;
 
@@ -46,22 +46,22 @@ public class Item
 
     public Item()
     {
-        this.id = -1;
+        id = -1;
     }
 }
 
 [Serializable]
 public class Equipment
 {
-    int att;
-    int def;
-    int spd;
-    int dex;
-    int vit;
-    int wis;
-    int hp;
-    int mp;
-    string slot;
+    public int att;
+    public int def;
+    public int spd;
+    public int dex;
+    public int vit;
+    public int wis;
+    public int hp;
+    public int mp;
+    public string slot;
 
     public Equipment(int att, int def, int spd, int dex, int vit, int wis, int hp, int mp, string slot)
     {
